@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+}
+
+.container{
+    margin-top: 7rem;
+    padding: 30px;
+    border-radius: 20px;
+    background: #6ab6e2;
+}
+
+.container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.new-task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.container .input-field {
+    flex: 1;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+
+
+.add-btn {
+    width: 35px;
+    height: 35px;
+    margin-left: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #de4b4b;
+    color: #fff;
+}
+
+.add-btn:hover{
+    cursor: pointer;
+    background: #dd1b1b;
+}
+
+ul {
+    list-style: none;
+    max-width: 400px;
+}
+
+li{
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #000000;
+}
+
+.task {
+    flex: 1;
+    word-break: break-word;
+}
+
+.checkbox {
+    margin-right: 10px;
+    
+}
