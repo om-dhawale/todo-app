@@ -36,6 +36,19 @@ function renderTodos(){
         deleteBtn.addEventListener('click', function(e){
             // e.stopPropagation();
             taskList.removeChild(li);
+            
+            //Remove this
+            let name=task.innerHTML;
+            let idx=-1;
+            for(let i in todos){
+                if(todos[i].text==name){
+                    idx=i;
+                }
+            }
+            todos.splice(idx, 1);
+            localStorage.setItem("todos", JSON.stringify(todos));
+
+
     });
 
     task.addEventListener('click', function(){
@@ -71,6 +84,8 @@ function renderTodos(){
         li.appendChild(deleteBtn);
 
         input.value = '';
+    } else {
+        alert("your task is empty");
     }
     });
 }

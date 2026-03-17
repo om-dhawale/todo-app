@@ -5,7 +5,9 @@ const taskList = document.querySelector('.task-list');
 addBtn.addEventListener("click", addTask);
 
 input.addEventListener("keydown", function(e){
-    e.code
+    if(e.code === "Enter"){
+        addTask();
+    }
 })
 
 function addTask() {
